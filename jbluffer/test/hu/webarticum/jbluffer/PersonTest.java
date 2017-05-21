@@ -13,7 +13,7 @@ public class PersonTest {
     public void test() {
         Person person = new Person();
         String email = person.getEmail();
-        System.out.println(email);
+        
         assertTrue(email.matches("[^@]+@[^@]+"));
         
         assertEquals(email, person.getEmail());

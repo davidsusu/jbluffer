@@ -2,6 +2,8 @@ package hu.webarticum.jbluffer;
 
 import java.text.Normalizer;
 
+import nl.flotsam.xeger.Xeger;
+
 public final class Util {
     
     private Util() {}
@@ -16,8 +18,7 @@ public final class Util {
     }
     
     public static String createStringByRegex(String regex) {
-        // TODO
-        return "some-password";
+        return new Xeger(regex).generate();
     }
     
 }
